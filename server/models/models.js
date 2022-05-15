@@ -68,8 +68,8 @@ const Criteria_user = sequelize.define('criteria_user', {
 User.hasOne(Storage_result)
 Storage_result.belongsTo(User)
 
-Storage_result.hasMany(Methodology)
-Methodology.belongsTo(Storage_result)
+Methodology.hasOne(Project)
+Project.belongsTo(Methodology)
 
 Methodology.hasOne(Criteria)
 Criteria.belongsTo(Methodology)
