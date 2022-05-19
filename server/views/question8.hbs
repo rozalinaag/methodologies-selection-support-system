@@ -1,0 +1,18 @@
+<div class="container"> 
+    <form action="/api/question/9" method="POST">
+        <h2>{{ question }}</h2>
+        <p>Если у вас плохо проработана документация, то изменения очень важны</p>
+        <div class="datalist">
+        <input list="character2" type="text" name="name" placeholder="Вносить изменения очень важно">
+            <datalist id="character2">
+                    <option value="Вносить изменения очень важно"></option>
+                    <option value="Желательно иметь возможность внести изменения"></option>
+                    <option value="Изменения будут вноситься редко"></option>
+                    <option value="Изменений не будет"></option>
+            </datalist>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>   
+</div>
+
+

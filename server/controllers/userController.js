@@ -11,6 +11,7 @@ const generateJwt = (id, email, role) => {
   )
 }
 
+
 class UserController {
   async registration(req, res, next) {
     const {email, password, role} = req.body
@@ -45,7 +46,16 @@ class UserController {
   async check(req, res, next) {
       const token = generateJwt(req.user.id, req.user.email, req.user.role)
       return res.json({token})
-  }
+ 
+    }
+
+  async form(req, res) {
+    res.render('auth', {
+        question: 'Введите email и пароль', 
+        isIndex: true,
+        name: 'form_auth',
+        })  
+    }
 }
 
 module.exports = new UserController();

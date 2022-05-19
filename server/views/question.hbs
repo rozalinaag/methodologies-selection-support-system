@@ -1,6 +1,9 @@
-<div class="container">  
-    <h2>{{ question }}</h2>
-    <p>{{ name }}</p>
+<div class="container"> 
+    <form action="/api/question/2" method="POST">
+        <h2>{{ question }}</h2>
+        <p><input  id="inputPassword5" name="name" placeholder="MailRu Group"></p>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>   
 </div>
 
 

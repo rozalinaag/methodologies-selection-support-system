@@ -1,0 +1,17 @@
+<div class="container"> 
+    <form action="/api/question/6" method="POST">
+        <h2>{{ question }}</h2>
+        <div class="datalist">
+        <input list="character2" type="text" name="name" placeholder="очень рискованный проект">
+            <datalist id="character2">
+                    <option value="очень рискованный проект"></option>
+                    <option value="рискованный проект"></option>
+                    <option value="нет серьезных рисков"></option>
+                    <option value="нет рисков"></option>
+            </datalist>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>   
+</div>
+
+

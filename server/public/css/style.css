@@ -45,6 +45,15 @@ body{
     white-space: normal;
 }
 
+.auth{
+    background-color: white;
+    padding: 30px;
+    margin-top: 8%;
+    width: 700px;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 @media (min-width: 768px) { 
     .welcome--title{
         font-size: 20px;
@@ -53,4 +62,16 @@ body{
         height: 500px;
     }
 
+}
+
+.datalist{
+    margin-bottom: 20px;
+}
+.flexbl{
+    display: flex;
+    align-items: center;
+}
+
+.level{
+    margin-right: 18px;
 }

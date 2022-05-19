@@ -12,6 +12,7 @@ router.use('/user', userRouter)
 router.use('/methodology', methodologyRouter)
 router.use('/project', projectRouter)
 router.use('/question', questionRouter)
+router.use('/auth', userRouter)
 
 
 

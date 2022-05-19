@@ -1,0 +1,45 @@
+<div class="container"> 
+    <form action="/api/question/result" method="POST">
+        <h4>{{ question }}</h4>
+        <br>
+        Количество разработчиков уровня: 
+        <div class="flexbl">
+            <p class="level">
+            junior:
+            <input type="number" size="3" name="dev_j" min="0" max="100" value="1"></p>
+            <p class="level">
+            middle:
+            <input type="number" size="3" name="dev_m" min="0" max="100" value="0"></p>
+            <p class="level">
+            senior:
+            <input type="number" size="3" name="dev_s" min="0" max="100" value="0"></p>
+        </div>
+        Количество тестировщиков уровня: 
+        <div class="flexbl">
+            <p class="level">
+            junior:
+            <input type="number" size="3" name="test_j" min="0" max="100" value="1"></p>
+            <p class="level">
+            middle:
+            <input type="number" size="3" name="test_m" min="0" max="100" value="0"></p>
+            <p class="level">
+            senior:
+            <input type="number" size="3" name="test_s" min="0" max="100" value="0"></p>
+        </div>
+        Количество аналитиков уровня: 
+        <div class="flexbl">
+            <p class="level">
+            junior:
+            <input type="number" size="3" name="anal_j" min="0" max="100" value="1"></p>
+            <p class="level">
+            middle:
+            <input type="number" size="3" name="anal_m" min="0" max="100" value="0"></p>
+            <p class="level">
+            senior:
+            <input type="number" size="3" name="anal_s" min="0" max="100" value="0"></p>
+        </div>
+        <button type="submit" class="btn btn-primary" href="../api/result" >Добавить</button>
+    </form>   
+</div>
+
+

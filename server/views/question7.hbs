@@ -1,0 +1,17 @@
+<div class="container"> 
+    <form action="/api/question/8" method="POST">
+        <h2>{{ question }}</h2>
+        <div class="datalist">
+        <input list="character2" type="text" name="name" placeholder="Документация прописана очень подробно">
+            <datalist id="character2">
+                    <option value="Документация прописана очень подробно"></option>
+                    <option value="Прописаны основные детали"></option>
+                    <option value="Документация проработана плохо"></option>
+                    <option value="Нет документации"></option>
+            </datalist>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>   
+</div>
+
+
