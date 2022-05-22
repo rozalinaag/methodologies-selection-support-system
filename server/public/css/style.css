@@ -44,7 +44,20 @@ body{
     align-items: center;
     white-space: normal;
 }
-
+.button-model{
+    height: 80px;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    font-size: 80px;
+}
+.discription{
+    font-size: 23px;
+    margin-top: 30px;
+}
 .auth{
     background-color: white;
     padding: 30px;
@@ -78,4 +91,5 @@ body{
 
 .methodology-result{
     margin-top: 35px;
+    font-size: 30px;
 }
